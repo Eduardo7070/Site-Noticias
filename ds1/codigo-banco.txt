@@ -1,0 +1,38 @@
+Iniciar o xampp - (apache e mysql)
+
+1 - http://localhost:8080/phpmyadmin
+
+nome do banco: dbsistema
+
+create table tbContato(
+	idContato int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(40),
+    email varchar(40),
+    assunto varchar(200),
+    mensagem varchar(2000),
+    data_criacao date
+);
+
+insert into tbContato values(null,'João','joao@gmail.com','assunto do joão','mensagem do joão','2023-05-23');
+insert into tbContato values(null,'Maria','maria@gmail.com','assunto da maria','mensagem da maria','2023-05-23');
+
+CREATE TABLE tbAdm(     
+	idAdm INT PRIMARY KEY AUTO_INCREMENT,     
+	emailAdm VARCHAR(100),     
+	senhaAdm VARCHAR(20) 
+);  
+
+INSERT INTO tbAdm VALUES(null , 'eduardosilva@gmail.com' , '1234');
+INSERT INTO tbAdm VALUES(null , 'petergomes@gmail.com' , '1234');
+INSERT INTO tbAdm VALUES(null , 'fernandoluiz@gmail.com' , '1234');
+INSERT INTO tbAdm VALUES(null , 'kaueleite@gmail.com' , '1234');
+
+CREATE TABLE tbnoticias(
+	idNoticias INT PRIMARY KEY AUTO_INCREMENT,
+	nomeNoticia VARCHAR(40),
+	descNoticia VARCHAR(300),
+	urlImagem VARCHAR(100)
+);
+
+INSERT INTO tbnoticias VALUES(NULL,'JAMHIL É DESTAQUE DO TORNEIO','jb é desclassificado do torneio por copiar codigo durante a prova','alunos_resized.jpg');
+
